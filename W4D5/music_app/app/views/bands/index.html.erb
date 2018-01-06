@@ -1,5 +1,7 @@
-It's working!
-<!--
-<%# @bands.each do %>
-<%#= band.name %>
-<%# end %> -->
+<ul>
+
+  <% @bands.each do |band|%>
+  <li><%= band.name %></li>
+  <% end %>
+
+</ul>

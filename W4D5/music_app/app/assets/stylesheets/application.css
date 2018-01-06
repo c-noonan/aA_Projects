@@ -21,6 +21,7 @@ body {
  .title {
    font-family: monospace;
    font-size: 15px;
+   margin: 15px;
  }
 
  .title ul li{
@@ -36,4 +37,33 @@ body {
    justify-content: center;
    font-size: 50px;
    color: white;
+ }
+
+ .title section {
+   display: flex;
+   font-size: 50px;
+   color: white;
+   height: 50px;
+ }
+
+ .title section:first-child {
+   justify-content: center;
+   text-decoration: overline;
+   border-bottom: 5px solid white;
+   padding: 15px;
+ }
+
+ .title section:last-child {
+   justify-content: flex-start;
+ }
+
+ .title section ~ section {
+   justify-content: flex-end;
+ }
+
+ .main-content {
+   font-family: monospace;
+   font-size: 20px;
+   color: white;
+   padding: 20px;
  }

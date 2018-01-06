@@ -10,17 +10,24 @@
 
   <body>
     <header class='title'>
-      <span>Music App</span>
-      <ul>
-        <% if @current_user %>
-        Welcome <%= current_user.email %>
-        <li><%= button_to "Sign-Out", session_url, method: :delete %></li>
-        <% else %>
-        <li><%= button_to "Sign-In", new_session_url, method: :get %></li>
-        <li><%= button_to "Sign-Up", new_user_url, method: :get %></li>
-        <% end %>
-      </ul>
-      <%= yield %>
+      <section>Music App</section>
+      <section>
+        <ul>
+          <% if @current_user %>
+          Welcome <%= current_user.email %>
+          <li><%= button_to "Sign-Out", session_url, method: :delete %></li>
+          <% else %>
+          <li><%= button_to "Sign-In", new_session_url, method: :get %></li>
+          <li><%= button_to "Sign-Up", new_user_url, method: :get %></li>
+          <% end %>
+        </ul>
+    </section>
+    <section>
+      <%= button_to "Home Page", new_session_url , method: :get %>
+    </section>
   </header>
+  <nav class="main-content">
+    <%= yield %>
+  </nav>
   </body>
 </html>
