@@ -1,0 +1,17 @@
+NEW USER
+
+<%= button_to "Go to sign in", new_session_url, method: :get %>
+
+<form action="<%= users_url %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label>Email
+    <input type="text" name="user[email]" value="">
+  </label>
+  <br>
+  <label>Password
+    <input type="text" name="user[password]">
+  </label>
+  <br>
+  <input type="submit" value="Sign Up!">
+  <!-- <%= button_to "Sign Up!", users_url, method: :post %> -->
+</form>
