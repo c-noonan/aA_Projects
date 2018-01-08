@@ -12,6 +12,11 @@ Band.create(name: 'Aerosmith')
 Band.create(name: 'Tom Petty and the Heartbreakers')
 Band.create(name: 'Eagles')
 Band.create(name: 'Backstreet Boys')
+Band.create(name: 'N\'Sync')
+Band.create(name: 'Boys II Men')
+Band.create(name: 'Nirvana')
+Band.create(name: 'AC/DC')
+Band.create(name: 'The Beatles')
 
 User.destroy_all
 User.create(email: 'alex@gmail.com', password: 'secret1')

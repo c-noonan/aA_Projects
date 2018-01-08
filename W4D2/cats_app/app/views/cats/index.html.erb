@@ -1,0 +1,15 @@
+<h1>Cats upon cats!</h1>
+
+
+<% @cats.each do |cat| %>
+
+  <ul style="list-style: none;">
+    <li><b>Name: <%= cat.name %></li></b>
+    <li>Birth Date: <%= cat.birth_date %></li>
+    <li>Color: <%= cat.color %></li>
+    <li>Sex: <%= cat.sex %></li>
+    <li>Description: <%= cat.description %></li>
+    <li><%= link_to "#{cat.name}'s page", cat_url(cat) %></li>
+  </ul>
+
+<% end %>
